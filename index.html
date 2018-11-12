@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Colors</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+      integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <section>
+        <h3>
+          RGB = rgb(<i class="red">red</i>, <i class="green">green</i>,
+          <i class="blue">blue</i>)
+        </h3>
+        <h2>% = 0 - 100%</h2>
+        <ol>
+          <li class="red">Red: rgb(100%,0%,0%)</li>
+          <li class="green">Green: rgb(0%,100%,0%)</li>
+          <li class="blue">Blue: rgb(0%,0%,100%)</li>
+        </ol>
+        <h2>8bit = 0 - 255</h2>
+        <h3>1bit - это один разряд двоичного числа, т.е. 0 или 1</h3>
+        <p>
+          <span class="bg-new-red">0</span>,
+          <span class="bg--new-blue">1</span> = <b>1bit</b> или
+          <b>2^1=2 значений</b>
+        </p>
+        <p>
+          <span class="bg-new-red">0</span>0,
+          <span class="bg-new-red">0</span>1,
+          <span class="bg-new-blue">1</span>0,
+          <span class="bg-new-blue">1</span>1 = <b>2bit</b> или
+          <b>2^2=4 значения</b>
+        </p>
+        <p>
+          <span class="bg-new-red">0</span>00,
+          <span class="bg-new-red">0</span>01,
+          <span class="bg-new-red">0</span>10,
+          <span class="bg-new-red">0</span>11,
+          <span class="bg-new-blue">1</span>00,
+          <span class="bg-new-blue">1</span>01,
+          <span class="bg-new-blue">1</span>10,
+          <span class="bg-new-blue">1</span>11 = <b>3bit</b> или
+          <b>2^3=8 значений</b>
+        </p>
+        <p>...</p>
+        <p>
+          <span class="bg-new-red">0</span>000 0000,
+          <span class="bg-new-red">0</span>000 0001,...,
+          <span class="bg-new-blue">1</span> 1110,
+          <span class="bg-new-blue">1</span> 1111 = <b>8bit</b> или
+          <b>2^8=256 значений</b>
+        </p>
+        <ol>
+          <li style="color:rgb(255,0,0);">Red: rgb(255,0,0)</li>
+          <li style="color: rgb(0,255,0);">Green: rgb(0,255,0)</li>
+          <li style="color: rgb(0,0,255);">Blue: rgb(0,0,255)</li>
+        </ol>
+      </section>
+      <section>
+        <h1>HEX</h1>
+        <h2>0123456789abcdef = 16</h2>
+        <div class="dflex">
+          <table>
+            <thead>
+              <tr>
+                <th>10-ое</th>
+                <th>16-ое</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <td>...</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>a</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>b</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>c</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>d</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>e</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>f</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>...</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td>256</td>
+                <td>ff</td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <thead>
+              <tr>
+                <th>rgb</th>
+                <th>hex</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>rgb(00,00,00)</td>
+                <td>
+                  #<i class="red">00</i><i class="green">00</i
+                  ><i class="blue">00</i>
+                </td>
+              </tr>
+              <tr>
+                <td>...</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td>rgb(09,09,09)</td>
+                <td>
+                  #<i class="red">09</i><i class="green">09</i
+                  ><i class="blue">09</i>
+                </td>
+              </tr>
+              <tr>
+                <td>rgb(10,10,10)</td>
+                <td>
+                  #<i class="red">0a</i><i class="green">0a</i
+                  ><i class="blue">0a</i>
+                </td>
+              </tr>
+              <tr>
+                <td>rgb(11,11,11)</td>
+                <td>
+                  #<i class="red">0b</i><i class="green">0b</i
+                  ><i class="blue">0b</i>
+                </td>
+              </tr>
+              <tr>
+                <td>rgb(12,12,12)</td>
+                <td>
+                  #<i class="red">0c</i><i class="green">0c</i
+                  ><i class="blue">0c</i>
+                </td>
+              </tr>
+              <tr>
+                <td>rgb(13,13,13)</td>
+                <td>
+                  #<i class="red">0d</i><i class="green">0d</i
+                  ><i class="blue">0d</i>
+                </td>
+              </tr>
+              <tr>
+                <td>rgb(14,14,14)</td>
+                <td>
+                  #<i class="red">0e</i><i class="green">0e</i
+                  ><i class="blue">0e</i>
+                </td>
+              </tr>
+              <tr>
+                <td>rgb(15,15,15)</td>
+                <td>
+                  #<i class="red">0f</i><i class="green">0f</i
+                  ><i class="blue">0f</i>
+                </td>
+              </tr>
+              <tr>
+                <td>rgb(16,16,16)</td>
+                <td>
+                  #<i class="red">10</i><i class="green">10</i
+                  ><i class="blue">10</i>
+                </td>
+              </tr>
+              <tr>
+                <td>rgb(17,17,17)</td>
+                <td>
+                  #<i class="red">11</i><i class="green">11</i
+                  ><i class="blue">11</i>
+                </td>
+              </tr>
+              <tr>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td>rgb(255,255,255)</td>
+                <td>
+                  #<i class="red">ff</i><i class="green">ff</i
+                  ><i class="blue">ff</i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>Там, где возможно, HEX запись следует сокращать:</h3>
+        <p>#ffffff = #fff</p>
+        <p>#111111 = #111</p>
+        <p>...</p>
+        <p>#000000 = #000</p>
+        
+      </section>
+      <section>
+        <h1>HSL</h1> 
+        <h2> цвет, насыщеность, яркость </h2>
+        <h3>Цвет</h3>
+        <img class="hsl-ring" src="./img/HLSColorSpace.png" alt="hsla ring" />
+        <p>0<sup>0</sup> или 360<sup>0</sup> - red</p>
+        <p>120<sup>0</sup> - green</p>
+        <p>240<sup>0</sup> - blue</p>
+        <h3>Насыщеность</h3>
+        <p>0% - абсолютно серый</p>
+        <p>50% - 50% серого</p>
+        <p>100% - абсолютно чистый цвет</p>
+        <h3>Яркость</h3>
+        <p>0% - абсолютно черный</p>
+        <p>50% - средний оттенок цвета (ни темный, ни яркий)</p>
+        <p>100% - абсолютно белый</p>
+        <h4>Применение</h4>
+        <p>Для создания палитры: </p>
+        <div class="img-wrp">
+            <img src="./img/itten.jpg" alt="itten ring">
+        </div>
+        <div class="img-wrp">
+          <img src="./img/itten-res.png" alt="itten ring result">
+        </div>
+        <p>Для создания дополнительных оттенков цвета палитры, которые будут гармонировать с остальными цветами</p>
+        <p>Не изменяя цвет, измеяют яркость или насыщенность</p>
+      </section>
+      <section>
+        <h2>Настройки цветовой модели Photoshop</h2>
+        <p>
+          <b>sRGB</b> является цветовым пространством стандартного монитора и
+          установлено рабочим пространством по умолчанию в большинстве цифровых
+          камер потребительского класса. Некоторые в выпадающем списке Настройки
+          выбирают пункт Заказная и выставляют свои параметры, некоторые
+          выбирают <i>Web/Интернет для Северной Америки</i>, некоторые
+          <i>Web/Интернет для Европы 2</i>, некоторые выбирают
+          <i>Универсальные настройки для Европы</i>. Отличаются все эти варианты
+          настройками <i>CMYK</i>, <i>градации серого</i> и <i>плашка</i>. Но
+          параметр RGB одинаков для всех - это sRGB.
+        </p>
+        <div class="img-wrp">
+          <img src="./img/srgb.jpg" alt="sRGB">
+          <img src="./img/rgb.jpg" alt="RGB">
+        </div>
+        <h2>Альфа - канал</h2>
+        <h3>Степень непрозрачности</h3>
+        <h4>background-color: </h4>
+        <p style="background-color: rgba(0,0,0,0)">rgba(0,0,0,0)</p>
+        <p style="background-color: rgba(0,0,0,.5)">rgba(0,0,0,.5)</p>
+        <p style="background-color: rgba(0,0,0,1); color: #fff;">rgba(0,0,0,1)</p>
+        <h2>Выбор фона и цвета текста</h2>
+        <h3>Правило 4.5</h3>
+        <p><a href="https://gennadiy1970.github.io/goit_fe/module-01/index.html">Пример выбора цвета и фона</a></p>
+        <p>Инструмент проверки корректности фона и цвета текста: плагин <a href="https://wave.webaim.org/">Web Accessability Evaluation Tool</a></p>
+        <p>Дальтоники: <a href="https://habr.com/post/31250/">10 инструментов проверки контраста вашего дизайна для улучшения его „читабельности“</a></p>
+      </section>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
